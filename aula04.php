@@ -18,7 +18,13 @@ print "usando print para exibir na tela" </br>; //o print mostra o que está err
     echo "Arquivo criado em $bata </br>"
 
     printf ("Salário mínimo: R$ %.2f </br>" $salario);
-    printf ("O salário de um %s é R$ %.2f por mês.", $ )
+    printf ("O salário de um %s é R$ %.2f por mês.", $cargo, $salario*2);
+
+    $fundo = "rosa";
+    $Fundo = "amarelo";
+    $FUNDO = "marrom";
+
+    echo $fundo. "-" .$Fundo. "-" .$FUNDO;
 
 
 ?>
