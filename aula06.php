@@ -11,7 +11,6 @@ $ano = $ano + 2;
 ?>
 
     <?php
-
         $ano = 2020; //variavel local no script
 
         //implementação de uma função
@@ -28,20 +27,17 @@ $ano = $ano + 2;
     ?>
 
     <?php
+        $ano = 2020; //variavel local no script
 
-    $ano = 2020; //variavel local no script
-
-    //implementação de uma função
-    function exibirAnoStatic(){
-        STATIC $ano;
-        $ano++;
-        echo "</br>" .$ano; 
+        //implementação de uma função
+        function exibirAnoStatic(){
+            STATIC $ano;
+            $ano++;
+            echo "</br>" .$ano; 
     }
 
-    echo "</br> Ano: " .exibirAnoStatic();
-    echo "</br> Ano: </br>" .exibirAnoStatic();
-
-
+        echo "</br> Ano: " .exibirAnoStatic();
+        echo "</br> Ano: </br>" .exibirAnoStatic()
     ?>
 
     <?php
