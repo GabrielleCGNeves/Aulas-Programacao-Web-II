@@ -1,5 +1,5 @@
 <?php
-    $operador = 1;
+    $operador = 4;
     $num1 = 10;
     $num2 = 2;
     $result = 0.0;
@@ -7,13 +7,13 @@
 
     switch($operador){
         case 1: 
-            $result = somaValor($num1, $num2); 
-            $operacao = "soma";
+            $result = adValor($num1, $num2); 
+            $operacao = "adiçao";
         break;
 
         case 2: 
             $result = subValor($num1, $num2); 
-            $operacao = "sub";
+            $operacao = "subtração";
         break;
 
         case 3: 
@@ -34,7 +34,7 @@
     echo "O resultado da " .$operacao. " é de " .$result;
 
 
-    function somaValor($num1, $num2){
+    function adValor($num1, $num2){
         return ($num1 + $num2);
     }
 
