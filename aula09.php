@@ -29,6 +29,4 @@
         $descCOOP = $salario * $COOP;
         return ($descCOOP);
     }
-
-
 ?>
