@@ -14,5 +14,4 @@
 
     echo validaNome(). "</br>";
     echo "A soma de " .$v1. " e " .$v2. " é de " .somaValor($v1, $v2);
-
 ?>

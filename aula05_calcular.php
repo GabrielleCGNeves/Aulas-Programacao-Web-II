@@ -9,6 +9,6 @@ $valor2=30;
         
     }
 
-     echo "A soma é " .soma($valor1, $valor2);
+    echo "A soma é " .soma($valor1, $valor2);
 
 ?>

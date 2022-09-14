@@ -15,7 +15,7 @@ print "usando print para exibir na tela" </br>; //o print mostra o que está err
     $salario = 850.00;
     $cargo = "Estagiario";
      
-    echo "Arquivo criado em $bata </br>"
+    echo "Arquivo criado em $data </br>"
 
     printf ("Salário mínimo: R$ %.2f </br>" $salario);
     printf ("O salário de um %s é R$ %.2f por mês.", $cargo, $salario*2);
