@@ -17,7 +17,7 @@ b. se não é divisível por nenhum destes */
         echo "O número é divisível por 2 </br>";
     }
 
-    else if(($num % 10 != 0)  && ($num % 5 != 0) && ($num % 2 != 0)){
+    if(($num % 10 != 0)  && ($num % 5 != 0) && ($num % 2 != 0)){
         echo "O número NÃO é divisível por 10, 5 ou 2.";
     }
 
