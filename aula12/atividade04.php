@@ -7,7 +7,6 @@ decrescente (insira números diferentes).*/
   //for each
 
 
-
   //Função própria do PHP para ordernar
  /* rsort($num);
 
