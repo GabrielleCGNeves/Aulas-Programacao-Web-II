@@ -1,33 +1,36 @@
 <?php
-/**4. Criar um aplicativo que possibilite entrar com 3 números e possa imprimi-los em ordem 
-decrescente (insira números diferentes).
- */
+/*4. Criar um aplicativo que possibilite entrar com 3 números e possa imprimi-los em ordem 
+decrescente (insira números diferentes).*/
 
-  $num = array(5, 90, 50);
+  //$num = array(10, 5, 19);
+
+  //for each
+
+
 
   //Função própria do PHP para ordernar
-  rsort($num);
+ /* rsort($num);
 
   echo $num[0]. ", " .$num[1]. " e " .$num[2]. "</br>";
 
-  //bubble sort PS: COLOCAR EM UMA FUNÇÃO
-  for($i = 0; $i <= sizeof($num); $i++){ //percorre o vetor
-    for($j = 0; $j < sizeof($num); $j++){ // percorre o vetor e ordena os numeros
-      if($num[$j] < ($num[$j+ 1])){
-        $aux = $num[$j];
-        $num[$j] = $num[$j+1];
-        $num[$j+1] = $aux;        
+
+  //bubble sort
+
+    $n = array (3, 6, 9);
+
+    for($i = 0; $i < sizeof($n); $i++){ //percorre o vetor
+      for($j = 0; $j < sizeof($n) - 1; $j++){ // percorre o vetor e ordena os numeros
+        if($n[$j] < ($n[$j+ 1])){
+          $aux = $n[$j];
+          $n[$j] = $n[$j+1];
+          $n[$j+1] = $aux;        
+        }
       }
     }
-  }
-  echo $num[0]. ", " .$num[1]. " e " .$num[2];
+    echo $n[0]. ", " .$n[1]. " e " .$n[2];*/
 
 
-  //for each
-  
-
-
-  // Jeito que fiz na aula
+  // Jeito feito em aula
   $n1 = 90;
   $n2 = 10;
   $n3 = 60;
@@ -37,7 +40,7 @@ decrescente (insira números diferentes).
   }
 
   else if($n1 > $n2 && $n3 > $n2){
-      echo $n2. ", " .$n3. " e " .$n1;
+      echo $n1. ", " .$n3. " e " .$n2;
   }
 
   else if($n2 > $n3 && $n3 > $n1){
@@ -55,5 +58,4 @@ decrescente (insira números diferentes).
   else{
       echo $n3. ", " .$n1. " e " .$n2;
   }
-
 ?>
