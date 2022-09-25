@@ -5,40 +5,39 @@ A maior altura e a menor altura;
 A média de altura de mulheres;
 A idade do homem mais velho e da mulher mais nova */
 
-    $nome = array("Bianca", "Lucas", "Beatriz", "Erick");
-    $sexo = array(1, 2, 1, 2);
-    $altura = array(1.80, 1.55, 1.92, 1.67);
-    $idade= array(18, 20, 30, 40);
-    $qtdPessoas = 50;
+  $nome = array("Bianca", "Lucas", "Beatriz", "Erick");
+  $sexo = array(1, 2, 1, 2);
+  $altura = array(1.80, 1.55, 1.92, 1.67);
+  $idade = array(49, 20, 78, 40);
+  $qtdPessoas = 4;
+  $qtdMulher = 0;
+  $idMulher = 150;
+  $idHomem = 0;
 
+  for($i = 0; $i < $qtdPessoas; $i++){
+    if($sexo[$i] == 1){
+      $qtdMulher++;
+      $media += $altura[$i];
+    }   
+  }
 
-    for($i = 0; $i < 4; $i++){
-        for($j = 0; $j < $idade[$j] - 1; $j++){
-            if($idade[$j] < $idade[$j - 1]){
-                $aux = $idade[$j];
-                $idade[$j] = $idade[$j - 1];
-                $idade[$j - 1] = $aux;
-            }
-        }
-        if($sexo[$i] == 1 && $idade[0]){
-            echo "A mulher mais nova é a " .$nome[$i] . " com " . $idade[0]. " anos </br>";       
-        }
-        }
+  echo "A média de altura das mulheres é de " .$media / $qtdMulher. "</br>";
 
+  rsort($altura);
+  echo "A maior altura é " .$altura[0]. " e a menor altura é de " .$altura[$qtdPessoas - 1]. "</br>";
 
-        if($sexo[$i] == 2){
+  for($i = 0; $i < $qtdPessoas; $i++){
+      if($sexo[$i] == 1 && $idMulher > $idade[$i]){
+        $idMulher = $idade[$i]; 
+      }
+        
+      if($sexo[$i] == 2 && $idHomem < $idade[$i]){
+        $idHomem = $idade[$i];
+      }
+  }
 
-        }
-    
-    
-
-
-
-
-    
-
-    rsort($altura);
-    echo "A maior altura é " .$altura[0]. " e a menor altura é de " .$altura[3];
+  echo "A mulher mais nova tem " . $idMulher. " anos </br>";
+  echo "O homem mais velho tem " . $idHomem. " anos </br>"; 
 
     /*$altura1 = 1.70;
     $idade1 = 15;
