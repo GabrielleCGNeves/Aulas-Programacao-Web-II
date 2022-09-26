@@ -8,11 +8,12 @@ A idade do homem mais velho e da mulher mais nova */
   $nome = array("Bianca", "Lucas", "Beatriz", "Erick");
   $sexo = array(1, 2, 1, 2);
   $altura = array(1.80, 1.55, 1.92, 1.67);
-  $idade = array(49, 20, 78, 40);
+  $idade = array(49, 20, 18, 40);
   $qtdPessoas = 4;
   $qtdMulher = 0;
   $idMulher = 150;
   $idHomem = 0;
+  $media = 0;
 
   for($i = 0; $i < $qtdPessoas; $i++){
     if($sexo[$i] == 1){
@@ -27,13 +28,13 @@ A idade do homem mais velho e da mulher mais nova */
   echo "A maior altura é " .$altura[0]. " e a menor altura é de " .$altura[$qtdPessoas - 1]. "</br>";
 
   for($i = 0; $i < $qtdPessoas; $i++){
-      if($sexo[$i] == 1 && $idMulher > $idade[$i]){
-        $idMulher = $idade[$i]; 
-      }
-        
-      if($sexo[$i] == 2 && $idHomem < $idade[$i]){
-        $idHomem = $idade[$i];
-      }
+    if($sexo[$i] == 1 && $idMulher > $idade[$i]){
+      $idMulher = $idade[$i]; 
+    }
+      
+    if($sexo[$i] == 2 && $idHomem < $idade[$i]){
+      $idHomem = $idade[$i];
+    }
   }
 
   echo "A mulher mais nova tem " . $idMulher. " anos </br>";
