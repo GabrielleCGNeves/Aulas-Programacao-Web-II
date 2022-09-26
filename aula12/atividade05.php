@@ -27,6 +27,9 @@ A idade do homem mais velho e da mulher mais nova */
   rsort($altura);
   echo "A maior altura é " .$altura[0]. " e a menor altura é de " .$altura[$qtdPessoas - 1]. "</br>";
 
+  //USAR array_UNSHIFT OU array_push     ARRAY SHIFT array rand Array search
+  //COLOCAR A MAIOR IDADE EM UM VETOR E ORGANIZAR
+
   for($i = 0; $i < $qtdPessoas; $i++){
     if($sexo[$i] == 1 && $idMulher > $idade[$i]){
       $idMulher = $idade[$i]; 
