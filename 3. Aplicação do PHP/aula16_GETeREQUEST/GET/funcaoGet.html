@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário -Função GET</title>
+</head>
+<body>
+    <h2>Formulário - Função GET</h2>
+
+    <form name="cadastro" method="get" action="funcaoGet.php">
+        Login:
+        <input type="text" name="nome"><br><br>
+
+        Senha:
+        <input type="password" name="senha"><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h2>Recuperando Dados GET - URL</h2>
+    <a href="funcaoGetUrl.php?id=10&user=admin">Passando dados via URL</a>
+</body>
+</html>
