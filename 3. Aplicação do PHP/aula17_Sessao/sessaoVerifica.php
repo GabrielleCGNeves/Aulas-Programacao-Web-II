@@ -11,7 +11,7 @@
 
             if($_SESSION["nome"] != "master"){
                 session_destroy();
-                header("loccation:sessaoBloqueio.php");
+                header("location:sessaoBloqueio.php");
             }
         ?>
 </head>
